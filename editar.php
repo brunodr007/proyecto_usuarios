@@ -17,7 +17,7 @@
 <body>
 
 	<?php
-		$nom=$_GET["nombre"];
+		$nom=$_GET["nombre"];//mandar id
 		$ed=$_GET["edad"];
 		$cla=$_GET["clave"];
 	?>
@@ -27,21 +27,21 @@
 	</nav>
 
 	<div class="container">
-	<form>
+	<form action="/practicas/proyecto/controladores/controlador.php" method="post">
 		<div class="form-group">
     		<label for="exampleInputEmail1">nombre</label>
-		    <input type="text" class="form-control" <?php echo ('value="'.$_GET["nombre"].'"') ?> >
+		    <input type="text" name="name" class="form-control" <?php echo ('value="'.$_GET["nombre"].'"') ?> >
 		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 	  	</div>
 
 	 	<div class="form-group">
 			    <label for="exampleInputPassword1">edad</label>
-			    <input type="text" class="form-control" <?php echo ('value="'.$ed.'"')?> placeholder="Edad">
+			    <input type="text" name="age" class="form-control" <?php echo ('value="'.$ed.'"')?> placeholder="Edad">
 	 	</div>
 
 	 	<div class="form-group">
 			    <label for="exampleInputPassword1">clave</label>
-			    <input type="password" class="form-control" <?php echo ('value="'.$cla.'"')?> placeholder="clave">
+			    <input type="password" name="password" class="form-control" <?php echo ('value="'.$cla.'"')?> placeholder="clave">
 	 	</div>
 
 
