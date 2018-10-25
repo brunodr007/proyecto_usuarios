@@ -17,9 +17,10 @@
 <body>
 
 	<?php
-		$nom=$_GET["nombre"];//mandar id
+		$nom=$_GET["nombre"];
 		$ed=$_GET["edad"];
 		$cla=$_GET["clave"];
+		$id=$_GET["id"];
 	?>
 
 	<nav class="navbar navbar-light bg-light">
@@ -28,6 +29,10 @@
 
 	<div class="container">
 	<form action="/practicas/proyecto/controladores/controlador.php" method="post">
+		<div class="form-group">
+			    <label for="exampleInputPassword1">id</label>
+			    <input type="hidden" name="id" class="form-control" <?php echo ('value="'.$id.'"')?> placeholder="id">
+	 	</div>
 		<div class="form-group">
     		<label for="exampleInputEmail1">nombre</label>
 		    <input type="text" name="name" class="form-control" <?php echo ('value="'.$_GET["nombre"].'"') ?> >

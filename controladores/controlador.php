@@ -1,5 +1,6 @@
 <?php
-require '/practicas/proyecto/models/bd.php';
+require_once '/opt/lampp/htdocs/practicas/proyecto/models/bd.php';
+require_once '/opt/lampp/htdocs/practicas/proyecto/models/UsuarioDAO.php';
 
 
 $n = $_POST['name'];

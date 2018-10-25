@@ -62,7 +62,7 @@ mysqli_close($conn);
 				      <td>'.$usuarios[$i][1].'</td>
 				      <td>30</td>
 				      <td>3</td>
-				      <td><button type="button" class="btn btn-primary"><a href="editar.php?nombre='.$usuarios[$i][1].'&edad='.$usuarios[$i][2].'&clave='.$usuarios[$i][3].'">editar</a></button></td>
+				      <td><button type="button" class="btn btn-primary"><a href="editar.php?nombre='.$usuarios[$i][1].'&edad='.$usuarios[$i][2].'&clave='.$usuarios[$i][3].'&id='.$usuarios[$i][0].'">editar</a></button></td>
 				      <td><button type="button" class="btn btn-secondary">eliminar</button></td>
 				      <td><button type="button" class="btn btn-success"><a href="agregar.php">agregar</a></button></td>
 				    </tr>';

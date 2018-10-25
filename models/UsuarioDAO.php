@@ -17,6 +17,7 @@ class UsuarioDAO{
 		}
 	}
 	public function GuardarUsuario($conn, $name, $age, $password){
+		$sql= "UPDATE usuario_proyecto SET nombre,edad,clave";
 		//hacer un update a la base de datos con los datos del usuario y retornar un 1 si se hizo el update o un 0 si no se hizo
 		return 1;
 	}
