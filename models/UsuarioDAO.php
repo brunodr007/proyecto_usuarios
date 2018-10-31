@@ -26,8 +26,8 @@ class UsuarioDAO{
 		//hacer un update a la base de datos con los datos del usuario y retornar un 1 si se hizo el update o un 0 si no se hizo
 	}
 
-	public function BorrarUsuario($conn, $n, $a, $p, $i){
-		$sql="ALTER TABLE usuario_proyecto DROP nombre='$n',edad='$a',clave='$p' WHERE id='$i'";
+	public function BorrarUsuario($conn, $id,$nom,$ed,$cla){
+		$sql="ALTER TABLE usuario_proyecto DROP nombre='$nom',edad='$ed',clave='$cla' WHERE id='$id'";
 		if($result=mysqli_query($conn,$sql)){
 			return 1;
 		}
