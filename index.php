@@ -2,7 +2,6 @@
 
 require 'models/UsuarioDAO.php';
 require 'models/bd.php';
-require 'controladores/control_delete.php';
 
 $usuario1 = new UsuarioDAO();
 

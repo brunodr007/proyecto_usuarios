@@ -27,7 +27,7 @@ class UsuarioDAO{
 	}
 
 	public function BorrarUsuario($conn, $id,$nom,$ed,$cla){
-		$sql="ALTER TABLE usuario_proyecto DROP nombre='$nom',edad='$ed',clave='$cla' WHERE id='$id'";
+		$sql="DELETE FROM usuario_proyecto WHERE id='$id'";
 		if($result=mysqli_query($conn,$sql)){
 			return 1;
 		}
