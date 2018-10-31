@@ -30,7 +30,6 @@
 	<div class="container">
 	<form action="/practicas/proyecto/controladores/controlador.php" method="post">
 		<div class="form-group">
-			    <label for="exampleInputPassword1">id</label>
 			    <input type="hidden" name="id" class="form-control" <?php echo ('value="'.$id.'"')?> placeholder="id">
 	 	</div>
 		<div class="form-group">
@@ -55,7 +54,7 @@
 			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
 	  	</div>
 
-	  		<button type="submit" class="btn btn-primary">Submit</button>
+	  		<button type="submit" class="btn btn-primary">actualizar</button>
 	</form>
 </div>
 
